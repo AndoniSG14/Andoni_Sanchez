@@ -75,7 +75,6 @@ public class UserService {
                 case "email" -> user.setEmail((String) v);
                 case "name" -> user.setName((String) v);
                 case "password" -> user.setPassword(sha1((String) v));
-                case "created_at" -> user.setCreatedAt((String) v);
             }
         });
         return user;
